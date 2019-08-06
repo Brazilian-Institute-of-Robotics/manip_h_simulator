@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+  <!-- Load Joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find manipulator_h_moveit)/config/mh_joint_trajectory_position_controller.yaml" command="load"/>
+
+  <!-- load the controller list -->
+  <node pkg="controller_manager" type="spawner" name="controller_spawner" respawn="false"	output="screen" ns="/robotis_manipulator_h"
+			  args="joint_state_controller
+				      mh_arm_controller"/>
+  
+</launch>

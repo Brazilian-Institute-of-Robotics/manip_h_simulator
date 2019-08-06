@@ -1,0 +1,6 @@
+<launch>
+<!-- Launch Gazebo, MoveIt! Back End -->
+<include file="$(find manipulator_h_moveit)/launch/mh_gazebo.launch"/>
+<include file="$(find manipulator_h_moveit)/launch/mh_moveit_planning_execution.launch"/>
+<!-- Nodes -->
+</launch>

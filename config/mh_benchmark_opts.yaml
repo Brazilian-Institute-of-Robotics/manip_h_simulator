@@ -1,0 +1,46 @@
+# Three different planners from OMPL are run a total of 10moveit0 times each, with a
+# maximum of 5 seconds per run.  Output is stored in the /tmp/moveit_benchmarks directory.
+
+benchmark_config:
+    warehouse:
+        host: 127.0.0.1
+        port: 33829
+        scene_name: mh_test     # Required
+    parameters:
+        name: benchMH
+        runs: 50
+        group: mh_arm       # Required
+        timeout: 5.0
+        output_directory: /tmp/moveit_benchmarks/manipulator_h
+        queries: 
+            - pp0
+            - pp1
+            - pp2
+        start_states: phome
+    planners:
+        - plugin: ompl_interface/OMPLPlanner
+          planners:
+            - ESTkConfigDefault
+            - RRTkConfigDefault
+            - RRTConnectkConfigDefault
+            - RRTstarkConfigDefault
+            - TRRTkConfigDefault
+            - PRMkConfigDefault
+            - PRMstarkConfigDefault
+            - FMTkConfigDefault
+            - BiTRRTkConfigDefault
+            - BiESTkConfigDefault
+            - LazyPRMkConfigDefault
+            - LazyPRMstarkConfigDefault
+            - SPARSkConfigDefault
+            - SPARStwokConfigDefault
+            #- SBLkConfigDefault    
+            #- ProjESTkConfigDefault
+            #- LBTRRTkConfigDefault
+            #- BFMTkConfigDefault
+            #- PDSTkConfigDefault
+            #- STRIDEkConfigDefault
+            #- LBKPIECEkConfigDefault
+            #- BKPIECEkConfigDefault
+            #- KPIECEkConfigDefault
+            #! PLANNERS OUT GIVEN ERROR : No default projection is set. Perhaps setup() needs to be called
