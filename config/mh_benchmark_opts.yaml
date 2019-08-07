@@ -8,7 +8,7 @@ benchmark_config:
         scene_name: mh_test     # Required
     parameters:
         name: benchMH
-        runs: 50
+        runs: 100
         group: mh_arm       # Required
         timeout: 5.0
         output_directory: /tmp/moveit_benchmarks/manipulator_h

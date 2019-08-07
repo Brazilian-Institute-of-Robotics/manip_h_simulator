@@ -117,11 +117,18 @@ rosrun manipulator_h_moveit mh_goToGoal.py
 ### **2. MoveIt! Benchmark**
 To know more about MoveIt! Benchmarking and understand more terms such as query or log and to understand how to create it, follow the tutorials [here](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/benchmarking/benchmarking_tutorial.html).
 
+Run the **demo.launch** to create your queries and start state (within the package, there are already queries and a start state):
+
+```sh
+roslaunch manipulator_h_moveit demo.launch db:=true
+```
+
 Run the benchmark process:
 
 ```sh
 roslaunch manipulator_h_moveit mh_benchmark.launch
 ```
+
 To generate your database:
 ```sh
 rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py diretorio_do_log
