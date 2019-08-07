@@ -115,7 +115,7 @@ rosrun manipulator_h_moveit mh_goToGoal.py
 ```
 
 ### **2. MoveIt! Benchmark**
-To know more about MoveIt! Benchmarking and understand more terms such as query, log e start state acess [here](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/benchmarking/benchmarking_tutorial.html).
+To know more about MoveIt! Benchmarking and understand more terms such as query or log and to understand how to create it, follow the tutorials [here](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/benchmarking/benchmarking_tutorial.html).
 
 Run the benchmark process:
 
