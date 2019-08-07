@@ -2,6 +2,10 @@
 
 The **goal** from this package, called **manipulator_h_moveit**, is to propose a simulated control from Manipulator-H from ROBOTIS using MoveIt! framework.
 
+![mhmi](https://user-images.githubusercontent.com/32513366/62636701-682e7080-b910-11e9-9602-45f32902fac9.png)
+
+**Source:** [ROBOTIS](http://www.robotis.us/robotis-manipulator-h/) and [MoveIt! Motion Planning Framework](https://moveit.ros.org/)
+ 
 ## **Requirements**
 
 This package presents the following basic requirements in your computer:
