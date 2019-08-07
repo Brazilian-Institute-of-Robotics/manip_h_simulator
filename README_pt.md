@@ -2,6 +2,10 @@
 
 O **objetivo** deste pacote, chamado de **manipulator_h_moveit**, é proporcionar o controle *simulado* do Manipulator-H da ROBOTIS utilizando o MoveIt!
 
+![mhmi](https://user-images.githubusercontent.com/32513366/62636701-682e7080-b910-11e9-9602-45f32902fac9.png)
+
+**Fonte:** [ROBOTIS](http://www.robotis.us/robotis-manipulator-h/) and [MoveIt! Motion Planning Framework](https://moveit.ros.org/)
+
 ## **Requisitos**
 
 Esse pacote apresenta os seguintes requisitos básicos necessários para sua máquina:
