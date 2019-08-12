@@ -1,6 +1,6 @@
 # MoveIt! Package for Manipulator-H
 
-The **goal** from this package, called **manipulator_h_moveit**, is to propose a simulated control from Manipulator-H from ROBOTIS using MoveIt! framework.
+The **goal** from this package, called **manipulator_h_moveit**, is to propose a simulated control to Manipulator-H from ROBOTIS using MoveIt! framework.
 
 ![mhmi](https://user-images.githubusercontent.com/32513366/62636701-682e7080-b910-11e9-9602-45f32902fac9.png)
 
@@ -18,7 +18,7 @@ Besides that, it is necessary to have **MoveIt! 1.0** and **MongoDB** installed 
 
 ### MoveIt!
 ```sh    
-sudo sudo apt-get install ros-kinetic-moveit
+sudo apt-get install ros-kinetic-moveit
 ```
 ### MongoDB
 To install the complete version, follow the steps bellow in a terminal.
