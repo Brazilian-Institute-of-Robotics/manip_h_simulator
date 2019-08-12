@@ -88,7 +88,7 @@ The packages listed bellow are necessary to use MoveIt! with ROS Control and Gaz
 
 To install, in a terminal:
 ```sh
-$ sudo apt-get install ros-kinetic-ros-control ros-kinetic-gazebo-ros-control ros-kinetic-controller-manager ros-kinetic-joint-trajectory-controller ros-kinetic-joint-state-controller
+sudo apt-get install ros-kinetic-ros-control ros-kinetic-gazebo-ros-control ros-kinetic-controller-manager ros-kinetic-joint-trajectory-controller ros-kinetic-joint-state-controller
 ros-kinetic-position-controllers
 ```
 Then in your **catkin workspace folder** run:
