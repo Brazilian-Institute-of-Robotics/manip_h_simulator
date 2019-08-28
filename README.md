@@ -1,11 +1,13 @@
 # MoveIt! Package for Manipulator-H
 
-The **goal** from this package, called **manipulator_h_moveit**, is to propose a simulated control to Manipulator-H from ROBOTIS using MoveIt! framework.
+The **goal** from this package, called **manipulator_h_moveit**, is to propose a simulated control from Manipulator-H from ROBOTIS using MoveIt! framework.
 
-![mhmi](https://user-images.githubusercontent.com/32513366/62636701-682e7080-b910-11e9-9602-45f32902fac9.png)
+![mhmi](https://user-images.githubusercontent.com/32513366/63880395-078cd380-c9a4-11e9-8364-3731cf085654.png)
 
 **Source:** [ROBOTIS](http://www.robotis.us/robotis-manipulator-h/) and [MoveIt! Motion Planning Framework](https://moveit.ros.org/)
  
+**OBS** This package was discontinued, because ROBOTIS stop to develop this model.
+
 ## **Requirements**
 
 This package presents the following basic requirements in your computer:
@@ -18,7 +20,7 @@ Besides that, it is necessary to have **MoveIt! 1.0** and **MongoDB** installed 
 
 ### MoveIt!
 ```sh    
-sudo apt-get install ros-kinetic-moveit
+sudo sudo apt-get install ros-kinetic-moveit
 ```
 ### MongoDB
 To install the complete version, follow the steps bellow in a terminal.
@@ -88,7 +90,7 @@ The packages listed bellow are necessary to use MoveIt! with ROS Control and Gaz
 
 To install, in a terminal:
 ```sh
-sudo apt-get install ros-kinetic-ros-control ros-kinetic-gazebo-ros-control ros-kinetic-controller-manager ros-kinetic-joint-trajectory-controller ros-kinetic-joint-state-controller
+$ sudo apt-get install ros-kinetic-ros-control ros-kinetic-gazebo-ros-control ros-kinetic-controller-manager ros-kinetic-joint-trajectory-controller ros-kinetic-joint-state-controller
 ros-kinetic-position-controllers
 ```
 Then in your **catkin workspace folder** run:

@@ -2,9 +2,11 @@
 
 O **objetivo** deste pacote, chamado de **manipulator_h_moveit**, é proporcionar o controle *simulado* do Manipulator-H da ROBOTIS utilizando o MoveIt!
 
-![mhmi](https://user-images.githubusercontent.com/32513366/62636701-682e7080-b910-11e9-9602-45f32902fac9.png)
+![mhmi](https://user-images.githubusercontent.com/32513366/63880395-078cd380-c9a4-11e9-8364-3731cf085654.png)
 
 **Fonte:** [ROBOTIS](http://www.robotis.us/robotis-manipulator-h/) and [MoveIt! Motion Planning Framework](https://moveit.ros.org/)
+
+**PS** Esse pacote foi descontinuado, porque a ROBOTIS parou de desenvolver esse modelo.
 
 ## **Requisitos**
 
