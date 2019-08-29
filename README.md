@@ -135,7 +135,7 @@ To generate your database:
 ```sh
 rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py diretorio_do_log
 ```
-Onde **diretorio_do_log** is the path (where the created log is located) for one of your logs created after the previous command.
+Where **diretorio_do_log** is the path (where the created log is located) for one of your logs created after the previous command.
 
 To analyze your results, acess [Planner Arena](http://plannerarena.org/) and update your database **.db**.
 
