@@ -36,7 +36,7 @@ class mh:
         self.gtg.orientation.w = 1
     # FUNCTION - GET MANUAL COORDINATES TO MOVE MANIPULATOR-H
     def get_coordinates(self):
-        rospy.loginfo("Usable Workspace Limits X := [-0.6;0.6] | Y := [-0.6;0.6] | Z := [0.16;0.75]")
+        print("Usable Workspace Limits X := [-0.6;0.6] | Y := [-0.6;0.6] | Z := [0.16;0.75]")
         self.gtg.position.x = float(input("Enter your X-coordinate: "))
         self.gtg.position.y = float(input("Enter your Y-coordinate: "))
         self.gtg.position.z = float(input("Enter your Z-coordinate: "))
@@ -96,10 +96,13 @@ if __name__ == '__main__':
         # INITIALIZE YOUR OBJECT
         manip = mh()
         # CONTROL MANIPULATOR-H BY - JOINT ANGLES
+        raw_input("Press Enter to control the manipulator by: SETTING JOINTS ANGLES command")
         manip.set_joints_manually(j0 = pi/2, j1 = -pi/2, j2 = -pi/2, j3 = 0, j4 = 0, j5 = pi/2)
         # CONTROL MANIPULATOR-H BY - DEFINED POSITION IN MOVEIT!
+        raw_input("Press Enter to control the manipulator by: GO TO A PREDETERMINED POSITION command")
         manip.go_to_pose(position_name="pB")
         # GET YOUR COORDINATES FROM THE USER
+        raw_input("Press Enter to control the manipulator by: CHOOSE A RANDOM POINT IN THE WORKSPACE command")
         manip.get_coordinates()
         # CONTROL YOUR MANIPULATOR TO YOUR GOAL
         manip.go_to_goal()

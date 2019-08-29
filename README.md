@@ -5,8 +5,6 @@ The **goal** from this package, called **manipulator_h_moveit**, is to propose a
 ![mhmi](https://user-images.githubusercontent.com/32513366/63880395-078cd380-c9a4-11e9-8364-3731cf085654.png)
 
 **Source:** [ROBOTIS](http://www.robotis.us/robotis-manipulator-h/) and [MoveIt! Motion Planning Framework](https://moveit.ros.org/)
- 
-**OBS** This package was discontinued, because ROBOTIS stop to develop this model.
 
 ## **Requirements**
 
