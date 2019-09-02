@@ -5,18 +5,18 @@ benchmark_config:
     warehouse:
         host: 127.0.0.1
         port: 33829
-        scene_name: mh_test     # Required
+        scene_name: mh_obstacles_3     # Required
     parameters:
         name: benchMH
-        runs: 100
+        runs: 15
         group: mh_arm       # Required
         timeout: 5.0
         output_directory: /tmp/moveit_benchmarks/manipulator_h
         queries: 
-            - pp0
-            - pp1
-            - pp2
-        start_states: phome
+            - pb2pa
+            - pb2pc
+            - ph2pa
+        start_states: pHD
     planners:
         - plugin: ompl_interface/OMPLPlanner
           planners:
@@ -43,4 +43,6 @@ benchmark_config:
             #- LBKPIECEkConfigDefault
             #- BKPIECEkConfigDefault
             #- KPIECEkConfigDefault
-            #! PLANNERS OUT GIVEN ERROR : No default projection is set. Perhaps setup() needs to be called
+            
+            #!!! PLANNERS OUT GIVEN ERROR !!!
+            ## o default projection is set. Perhaps setup() needs to be called
