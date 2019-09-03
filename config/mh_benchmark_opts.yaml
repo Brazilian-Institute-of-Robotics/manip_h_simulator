@@ -1,4 +1,4 @@
-# Three different planners from OMPL are run a total of 10moveit0 times each, with a
+# Three different planners from OMPL are run a total of 100 times each, with a
 # maximum of 5 seconds per run.  Output is stored in the /tmp/moveit_benchmarks directory.
 
 benchmark_config:
@@ -8,7 +8,7 @@ benchmark_config:
         scene_name: mh_obstacles_3     # Required
     parameters:
         name: benchMH
-        runs: 15
+        runs: 100
         group: mh_arm       # Required
         timeout: 5.0
         output_directory: /tmp/moveit_benchmarks/manipulator_h
@@ -16,6 +16,10 @@ benchmark_config:
             - pb2pa
             - pb2pc
             - ph2pa
+            - phl2pb
+
+            ## Could be a bug, but the benchmark.launch ignores the queries here and test every query in the scene
+            ## Independent that is here or not
         start_states: pHD
     planners:
         - plugin: ompl_interface/OMPLPlanner
@@ -34,6 +38,8 @@ benchmark_config:
             - LazyPRMstarkConfigDefault
             - SPARSkConfigDefault
             - SPARStwokConfigDefault
+            
+            #!!! PLANNERS OUT GIVEN ERROR !!!
             #- SBLkConfigDefault    
             #- ProjESTkConfigDefault
             #- LBTRRTkConfigDefault
@@ -43,6 +49,5 @@ benchmark_config:
             #- LBKPIECEkConfigDefault
             #- BKPIECEkConfigDefault
             #- KPIECEkConfigDefault
-            
-            #!!! PLANNERS OUT GIVEN ERROR !!!
-            ## o default projection is set. Perhaps setup() needs to be called
+                    
+            ## ERROR - 0 default projection is set. Perhaps setup() needs to be called
