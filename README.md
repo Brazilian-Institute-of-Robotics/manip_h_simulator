@@ -123,19 +123,30 @@ Run the **demo.launch**:
 ```sh
 roslaunch manipulator_h_moveit demo.launch db:=true
 ```
-Here, you will be using RViz to create your scenes, queries and start states. The steps here was already created before, **so it is only necessary if you want to create your own tests**.
+
+#### **2.1.1. Create your Scene!**
+Here, you will be using RViz to create your scenes, queries and start states. The steps here was already created before, **so it is only necessary if you want to create your own tests**, if it is not the case go to **section 2.1.2.**
 
 Following the steps in *MotionPlanning*:
-1. In *Context tab*, click in **Connect** to create a link with your database created by MongoDB.
-2. In *Scene Objects tab*, you can upload **.stl** files that will work as obstacles where you have the option to scale and change it positions in the grid. After that, click in **Publish Scene**.
+1. In *Context tab*, click on **Connect** to create a link with your database created by MongoDB.
+2. In *Scene Objects tab*, you can upload **.stl** files that will work as obstacles where you have the option to scale and change it positions in the grid. After that, click on **Publish Scene**.
 3. After defining your obstacles in the grid, go to *Stored Scenes tab* and save your scene clicking in **Save Scene**. Double click to rename it.
-4. To create a query, define your start and end point in *Planning tab*, go to *Stored Scenes tab*, click in your **sceneName** and then click in **Save Query**. Double click to rename it.
-5. To save a start state, define a Start State in *Planning tab*, go to *Stored States* and then click in **Save Start**.
+4. To create a query, define your start and end point in *Planning tab*, go to *Stored Scenes tab*, click on your **sceneName** and then click on **Save Query**. Double click to rename it.
+5. To save a start state, define a Start State in *Planning tab*, go to *Stored States* and then click on **Save Start**.
 
-After that, you can close this process. 
+#### **2.1.2. Load Created Scene**
+This package has a created scene within queries and start states. The scene is shown bellow:
 
-**PS**: This part is already implemented within the package, But feel free to create others scenes/queries. The scene created for this package is presented bellow:
 ![scene](https://user-images.githubusercontent.com/32513366/64129981-d4788480-cd95-11e9-9e99-a6a9a98059d7.png)
+
+To load it, follow this steps in *MotionPlanning*:
+1. In *Context tab*, click in **Connect** to create a link with your database created by MongoDB.
+2. In *Stored Scenes tab*, click on **mh_obstacles_3** and then click on **Load Scene**
+3. To load a query from this scene, click on the **left arrow** in mh_obstacles_3 and click in one of the queries that appears. After that click on **Load Query**.
+
+Here you can see the presented scene with a specific query loaded, where the start pose is in white and end pose is pink.
+![scene](https://user-images.githubusercontent.com/32513366/64177595-37215d00-ce36-11e9-8cb4-a9f06771f251.png)
+
 
 
 ### **2.2 Setting your Benchmark options**
@@ -158,7 +169,7 @@ This process can take a while to finish. After closing, will generate a series o
 rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py <diretorio_do_log>
 ```
 
-Or, if you want to plot the results too, you can use this command:
+Or, if you want to **plot the results too**, you can use this command:
 
 ```sh
 rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py -p <plotName> <diretorio_do_log>
