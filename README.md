@@ -163,16 +163,24 @@ roslaunch manipulator_h_moveit mh_benchmark.launch
 ```
 This process can take a while to finish. After closing, will generate a series of *log files* related to specific queries in your *output_directory*.
 
-### **2.4. Generate your Databases for analysis**
+### **2.4. Generate your Databases for further analysis**
 
 ```sh
 rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py <diretorio_do_log>
+```
+Example:
+```sh
+rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py /tmp/moveit_benchmarks/manipulator_h/benchMH_pHD_pb2pa_kwr_2019-09-10T18:52:16.929276.log
 ```
 
 Or, if you want to **plot the results too**, you can use this command:
 
 ```sh
 rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py -p <plotName> <diretorio_do_log>
+```
+Example:
+```sh
+rosrun moveit_ros_benchmarks moveit_benchmark_statistics.py -p benchResults /tmp/moveit_benchmarks/manipulator_h/benchMH_pHD_pb2pa_kwr_2019-09-10T18:52:16.929276.log
 ```
 
 Where **<diretorio_do_log>** is the path (where the created log is located, defined in *mh_benchmark_opts.yaml*) for one of your logs created after step **2.3**. Every query generate one log file.
