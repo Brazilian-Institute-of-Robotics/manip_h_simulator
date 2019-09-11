@@ -18,7 +18,7 @@ Besides that, it is necessary to have **MoveIt! 1.0** and **MongoDB** installed 
 
 ### MoveIt!
 ```sh    
-sudo sudo apt-get install ros-kinetic-moveit
+sudo apt-get install ros-kinetic-moveit
 ```
 ### MongoDB
 To install the complete version, follow the steps bellow in a terminal.
