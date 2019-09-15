@@ -23,13 +23,13 @@ sudo apt-get install ros-kinetic-moveit
 ### MongoDB
 To install the complete version, follow the steps bellow in a terminal.
 ```sh    
-wget -qO - https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 ```
 ```sh    
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 ```
 ```sh    
-sudo apt-get update 
+sudo apt-get update
 ```
 ```sh    
 sudo apt-get install -y mongodb-org
@@ -38,7 +38,13 @@ sudo apt-get install -y mongodb-org
 For more info about MongoDB installation, acess [here](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/).
 
 ## **Workspace Dependencies**
-Besides **manipulator_h_moveit** itself, your catkin workspace must include in your **src folder** the following packages:
+Besides **manipulator_h_moveit** itself
+- [manipulator_h_moveit](https://github.com/Brazilian-Institute-of-Robotics/manipulator_h_moveit/tree/develop) (develop branch)
+    ```sh
+    git clone -b develop https://github.com/Brazilian-Institute-of-Robotics/manipulator_h_moveit.git
+    ```
+ 
+your catkin workspace must include in your **src folder** the following packages:
 
 - [ROBOTIS-MANIPULATOR-H](https://github.com/KaikeWesleyReis/ROBOTIS-MANIPULATOR-H.git) (master branch)
 
@@ -70,6 +76,19 @@ Besides **manipulator_h_moveit** itself, your catkin workspace must include in y
     git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
     ```
 
+In your **src** folder install **warehouse-ros-mongo** dependencies, necessary to build your workspace, as proposed in this [link](https://github.com/ros-planning/warehouse_ros_mongo):
+```sh
+git clone -b 26compat https://github.com/mongodb/mongo-cxx-driver.git
+```
+```sh
+sudo apt-get install scons
+```
+```sh
+cd mongo-cxx-driver
+```
+```sh
+sudo scons --prefix=/usr/local/ --full --use-system-boost --disable-warnings-as-errors
+```
 ## **Requirements for MoveIt!**
 
 The packages listed bellow are necessary to use MoveIt! with ROS Control and Gazebo:
