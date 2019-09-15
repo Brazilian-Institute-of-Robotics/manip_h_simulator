@@ -127,7 +127,7 @@ MoveIt! Benchmarking helps the researcher to defined the best planner trajectory
 - **planner**: Algorithm capable to calculate a path (trajectory) between two points.
 - **start state**: Position where your robot start at the very beginning. Used to avoid any colision scenario.
 - **scene**: It is your environment itself, can contains your robot and obstacles.
-- **query**: A path defined by a *start state* and *end state*. Beside that, a query have information about the scene where it was set, i.e. a query is contain in a scene. 
+- **query**: A path defined between two points. Beside that, a query have information about the scene where it was set, i.e. a query is contain in a scene. 
 - **runs**: Numeric parameter. Is the number of attempts that a planner will have to calculate a query's trajectory.
 - **timeout**: Numeric parameter. Is the maximum time (in seconds) allowed for a planner to find a solution.
 
