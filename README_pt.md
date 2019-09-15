@@ -38,18 +38,17 @@ sudo apt-get install -y mongodb-org
 Para mais informações sobre a instalação do MongoDB acesse [aqui](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
 ## Dependências de outros pacotes
-Além do **manipulator_h_moveit**
+Além do **manipulator_h_moveit**:
 
     ```sh
     git clone -b develop https://github.com/Brazilian-Institute-of-Robotics/manipulator_h_moveit.git
     ```
-
 seu catkin workspace precisa incluir, na pasta *src*, os seguintes pacotes:
 - [ROBOTIS-MANIPULATOR-H](https://github.com/KaikeWesleyReis/ROBOTIS-MANIPULATOR-H.git) (master branch)
    
    ```sh
     git clone https://github.com/KaikeWesleyReis/ROBOTIS-MANIPULATOR-H.git
-    ```
+   ```
 - [warehouse_ros_mongo](https://github.com/ros-planning/warehouse_ros_mongo.git) (jade-devel branch)
     ```sh
     git clone https://github.com/ros-planning/warehouse_ros_mongo.git
