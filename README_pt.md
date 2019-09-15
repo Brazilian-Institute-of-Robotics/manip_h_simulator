@@ -38,8 +38,8 @@ sudo apt-get install -y mongodb-org
 Para mais informações sobre a instalação do MongoDB acesse [aqui](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
 ## Dependências de outros pacotes
-Além do **manipulator_h_moveit**:
-
+Além do **manipulator_h_moveit** 
+- [manipulator_h_moveit](https://github.com/Brazilian-Institute-of-Robotics/manipulator_h_moveit/tree/develop) (develop branch)
     ```sh
     git clone -b develop https://github.com/Brazilian-Institute-of-Robotics/manipulator_h_moveit.git
     ```
