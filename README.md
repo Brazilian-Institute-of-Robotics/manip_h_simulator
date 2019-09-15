@@ -47,7 +47,6 @@ Besides **manipulator_h_moveit** itself
 your catkin workspace must include in your **src folder** the following packages:
 
 - [ROBOTIS-MANIPULATOR-H](https://github.com/KaikeWesleyReis/ROBOTIS-MANIPULATOR-H.git) (master branch)
-
     ```sh
     git clone https://github.com/KaikeWesleyReis/ROBOTIS-MANIPULATOR-H.git
     ```
